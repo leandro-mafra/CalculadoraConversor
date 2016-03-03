@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mafra.calculadoraconversor.ActivityMassa">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerMassa"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/entadaMassa"
+        android:layout_below="@+id/spinnerMassa"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+    <View
+        android:layout_width = "match_parent"
+        android:layout_height = "1dp"
+        android:background = "@android:color/darker_gray"
+        android:id="@+id/viewcom"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/entadaMassa" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/viewcom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="da1"
+                android:id="@+id/viMassa1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/reMassa1"
+                android:gravity="center" />
+            <View
+                android:layout_width = "match_parent"
+                android:layout_height = "1dp"
+                android:background = "@android:color/darker_gray"
+                android:id="@+id/viewm1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="da1"
+                android:id="@+id/viMassa2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/reMassa2"
+                android:gravity="center" />
+            <View
+                android:layout_width = "match_parent"
+                android:layout_height = "1dp"
+                android:background = "@android:color/darker_gray"
+                android:id="@+id/viewm2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="da1"
+                android:id="@+id/viMassa3"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/reMassa3"
+                android:gravity="center" />
+            <View
+                android:layout_width = "match_parent"
+                android:layout_height = "1dp"
+                android:background = "@android:color/darker_gray"
+                android:id="@+id/viewm3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
